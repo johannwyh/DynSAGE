@@ -1,0 +1,11 @@
+python -um src.main \
+--gpu-id 2 \
+--dataSet cora \
+--epochs 200 \
+--b_sz 60 \
+--cuda \
+--learn_method sup \
+--transductive --node_per_class 20 \
+--conf ./src/experiments.conf \
+--DynamicSAGE \
+--name cora_pre_nf

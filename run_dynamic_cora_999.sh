@@ -1,0 +1,12 @@
+python -um src.main \
+--gpu-id 4 \
+--dataSet cora \
+--epochs 200 \
+--b_sz 60 \
+--cuda \
+--learn_method sup \
+--transductive --node_per_class 20 \
+--conf ./src/experiments.conf \
+--DynamicSAGE \
+--expand-train-set --thres-top1 0.999 --warm-up 50 --expand-freq 5 \
+--graph-revise --revise-topk 10

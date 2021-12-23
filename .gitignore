@@ -1,0 +1,13 @@
+# ignore .torch files
+*.torch
+
+# ignore logs and models folders
+logs/
+models/
+
+# Byte-compiled / optimized / DLL files
+src/__pycache__/
+*.py[cod]
+*$py.class
+.DS_Store
+.vscode/
